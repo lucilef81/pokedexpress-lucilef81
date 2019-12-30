@@ -7,7 +7,7 @@ et disposent de caractéristiques de combat appelées statistiques. Chaque poké
 
 Vous aurez besoin pour cette mission des outils suivants : 
 - NodeJS
-- PostGreSQM
+- PostGreSQL
 - HTML et CSS
 - npm
 - express et ses copains

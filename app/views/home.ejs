@@ -1,0 +1,14 @@
+<%- include('header') %>
+
+<% for(let pokemon of pokemons) { %>
+  <div class="thumbnail">
+    <a href="/pokemon/<%= pokemon.numero %>">
+      <img src="/img/<%= pokemon.numero %>.png" alt="Illustration de <%= pokemon.nom %>">
+      <span><%= pokemon.nom %></span>
+  
+    </a>
+  </div>
+
+<% } %>
+
+<%- include('footer') %>

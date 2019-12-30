@@ -1,0 +1,146 @@
+body {
+  background-color: #c13f3f;
+  font-family: 'Bree Serif', serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+/* HEADER */
+header {
+  background-color: white;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+header nav {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header nav a,
+header nav form input {
+  margin: 5px;
+  color: #c13f3f;
+}
+
+header nav form {
+  display: inline-block;
+}
+
+header nav a#home {
+  font-size: 20px;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  color: white;
+}
+
+main div.row {
+  width: 100%;
+}
+
+main div.thumbnail {
+  margin: 10px;
+  padding: 10px;
+  background-color: #982b2b;
+  border-radius: 15px;
+  max-width: 250px;
+}
+
+main div.thumbnail img {
+  width: 100%;
+}
+main h1 {
+  font-size: 25px;
+}
+
+main div.row--details {
+  display: flex;
+}
+
+main div.row--details img {
+  padding: 1%;
+  flex: 2;
+}
+
+main div.row--details div.details {
+  background-color: #aa3738;
+  flex: 3;
+  margin:3%;
+  border-radius: 15px;
+  text-align: left;
+  padding: 0 25px;
+}
+
+.details .name {
+  font-size: 25px;
+  margin: 25px 0;
+}
+
+.details .caption--stats {
+  font-size: 20px;
+  margin: 25px 0;
+}
+
+.stats  {
+  display: flex;
+  margin: 5px 0;
+}
+
+
+.stats .stats-name {
+  flex: 3;
+}
+
+.stats .stats-number {
+  flex :1;
+}
+
+.stats .stats-base {
+  flex: 4;
+  background-color: #632b2a;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+} 
+
+.stats .stats-base .stats-percent {
+  background-color: white;
+  height: 100%;
+}
+
+.details .types .type {
+  margin: 8px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.link--type {
+  padding: 25px;
+  min-width: 20%;
+  margin: 5px 0;
+  border-radius: 15px;
+}
+
+.link--add {
+  color: violet;
+}
+
+.link--delete {
+  color: violet;
+  font-size: 12px;   
+}

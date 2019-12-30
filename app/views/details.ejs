@@ -1,0 +1,40 @@
+<%- include('header') %>
+
+<div class="row">
+    <h1>Détails de <%= pokemon.nom %></h1>
+</div>
+
+<div class="row">
+    <a class="link--add" href="/team/add/<%= pokemon.numero %>">+ Ajouter à mon équipe</a>
+</div>
+
+<div class="row row--details">
+    <img src="/img/<%= pokemon.numero %>.png" alt="Illustration de <%= pokemon.nom %>" class="illustration">
+    <div class="details">
+        <div class="name">#<%= pokemon.numero %>&nbsp;<%= pokemon.nom %></div>
+        <div class="types">
+            <% for (let type of types) { %>
+                <span class="type" style="background-color: #<%= type.color %>;">
+                    <%= type.name %>
+                </span>
+            <% } %>
+        </div>
+        <div class="caption--stats">Statistiques</div>
+
+        <%# Object.keys est très pratique: il renvoie un array avec les noms des propriétés de l'objet %>
+        <% for(let stat of Object.keys(statsLabels) ) { %>
+            <div class="stats">
+                <span class="stats-name"><%= statsLabels[stat] %></span>
+                <span class="stats-number"><%= pokemon[stat] %></span>
+                <div class="stats-base">
+                    <div class="stats-percent" style="width:<%= (pokemon[stat]/255) *100 %>%"></div>
+                </div>
+            </div>
+        <% } %>
+        
+    </div>
+</div>
+<div class="row">
+    <a href="/">Revenir à la liste</a>
+</div>
+<%- include('footer') %>
